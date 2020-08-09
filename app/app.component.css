@@ -1,0 +1,23 @@
+p {
+  font-family: Lato;
+}
+
+.fill {
+  flex: 1 1 auto;
+}
+
+
+main {
+  padding: 30px;
+}
+
+section {
+  padding: 40px;
+  background: #f7f7f7;
+  border: 1px solid black;
+  margin: 50px 24px;
+}
+
+code {
+  background: #ececec;
+}

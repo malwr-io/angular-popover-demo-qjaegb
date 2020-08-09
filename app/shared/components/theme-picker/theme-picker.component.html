@@ -1,0 +1,14 @@
+<div class="theme-picker-container" (keydown)="onItemKeydown($event)">
+  <button mat-button class="item"
+       *ngFor="let theme of themes; let i = index; let last = last"
+       [ngStyle]="theme.styles"
+       [class.current]="currentTheme === theme"
+       (click)="installTheme(theme)"
+       [class.hover]="hovering!==null"
+       (focus)="hovering=theme"
+       [attr.cdkFocusInitial]="currentTheme === theme || null"
+       (mouseenter)="hovering=theme"
+       (mouseleave)="hovering=null">
+    <mat-icon *ngIf="currentTheme === theme">check_circle</mat-icon>
+  </button>
+</div>
